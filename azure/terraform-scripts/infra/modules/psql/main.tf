@@ -20,6 +20,7 @@ resource "azurerm_key_vault" "kv" {
     key_permissions = [
       "Create",
       "Get",
+      "List"
     ]
 
     secret_permissions = [
@@ -27,7 +28,8 @@ resource "azurerm_key_vault" "kv" {
       "Get",
       "Delete",
       "Purge",
-      "Recover"
+      "Recover",
+      "List"
     ]
   }
   access_policy {
@@ -37,6 +39,7 @@ resource "azurerm_key_vault" "kv" {
     key_permissions = [
       "Create",
       "Get",
+      "List"
     ]
 
     secret_permissions = [
@@ -44,7 +47,8 @@ resource "azurerm_key_vault" "kv" {
       "Get",
       "Delete",
       "Purge",
-      "Recover"
+      "Recover",
+      "List"
     ]
   }
 }
