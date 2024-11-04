@@ -111,5 +111,5 @@ resource "azurerm_postgresql_flexible_server_database" "db" {
 resource "azurerm_postgresql_flexible_server_configuration" "max_connections" {
   server_id = azurerm_postgresql_flexible_server.psql.id
   name      = "max_connections"
-  value     = 100
+  value     = 200
 }
